@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Lapé</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+<body id="bodyContacto">
+<div id="header">
+	<div class="navbar">
+		<img src="./images/qwer.jpg" id="logo">
+		<nav>
+			<ul id="menuList">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="shop.html">SHOP</a></li>
+				<li><a href="preguntasfrecuentes.html">PREGUNTAS FRECUENTES</a></li>
+				<li><a href="contacto.html">CONTACTO</a></li>
+			</ul>
+		</nav>
+		<img src="./images/menu.png" class="menu-icon" onclick="togglemenu()">
+	</div>
+<main id="mainContacto">
+<section> 
+        <h2>CONTACTANOS</h2>
+        </section>
+       <div class="container" id="formularioContacto">
+        <form class="row g-3">
+            <div class="col-12">
+            <label for="inputName" class="form-label">NOMBRE COMPLETO</label>
+            <input type="text" class="form-control" id="inputName">
+        </div>
+            <div class="col-12">
+                <label for="emailInput" class="form-label">EMAIL</label>
+                <input type="email" class="form-control" id="emailInput">
+            </div>
+            <div class="col-12">
+                <label for="inputPhone" class="form-label">TELEFONO</label>
+                <input type="text" class="form-control" id="inputPhone" placeholder="11 4433 1122">
+            </div>
+            <div class="col-12">
+                <label for="With textarea" class="form-label">MENSAJE</label>
+                <textarea class="form-control" aria-label="With textarea" placeholder="DEJANOS TU MENSAJE"></textarea>
+              </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">ENVIAR</button>
+            </div>
+        </div>
+    </form>
+</section>
+</main>
+        <footer class="footer">
+            <div class="social-links">
+                <img src="images/fb.png">
+                <img src="images/tw.png">
+                <img src="images/ig.png">
+            </div>
+        </footer>
+        </div>
+    <script>
+
+        var menuList = document.getElementById ("menuList");
+
+        menuList.style.maxHeight = "0px";
+        
+        function togglemenu(){
+            
+            if (menuList.style.maxHeight == "0px") {
+                
+                menuList.style.maxHeight = "130px";
+            }
+
+            else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+
+    </script>
+</body>
+</html>
